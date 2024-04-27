@@ -49,6 +49,7 @@ Check the status of apache2
 
 ![Screenshot 2024-04-27 230353](https://github.com/sathyaa22/Compromising-windows-using-Metasploit/assets/140483368/70e79ec5-be33-45d6-9b52-22ddcfe6cbcc)
 
+
 Invoke msfconsole:
 
 ## OUTPUT:
@@ -69,6 +70,7 @@ On kali give the command exploit
 
 ![Screenshot 2024-04-27 230745](https://github.com/sathyaa22/Compromising-windows-using-Metasploit/assets/140483368/dba3c593-d134-4154-a2c9-0d9a2bfaf7f2)
 
+
 To see a list of processes, at the meterpreter > prompt, execute this command: ps ⇒ can see the fun.exe process running with pid 1156
 
 The Metasploit shell is running inside the "fun.exe" process. If the user closes that process, or logs off, the connection will be lost. To become more persistent, we'll migrate to a process that will last longer. Let's migrate to the winlogon process. At the meterpreter > prompt, execute this command:
@@ -80,6 +82,7 @@ migrate -N explorer.exe at meterpreter > prompt, execute this command: netstat A
 Post Exploitation The target is now owned. Following are meterpreter commands for key capturing in the target machine keyscan_start Begins capturing keys typed in the target. On the Windows target, open Notepad and type in some text, such as your name.
 
 ![Screenshot 2024-04-27 230951](https://github.com/sathyaa22/Compromising-windows-using-Metasploit/assets/140483368/74e7a655-4097-4c59-ad23-acc7e3eff712)
+
 
 keyscan_dump Shows the keystrokes captured so far
 
